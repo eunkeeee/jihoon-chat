@@ -12,7 +12,11 @@
 #friends-display-link i {
   color: #d5d5d5;
 }
-
+.friends {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
 .friends-screen {
   padding: 0px var(--horizontal-space);
 }
