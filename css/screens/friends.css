@@ -1,0 +1,64 @@
+#friends-display-link {
+  text-align: center;
+  display: block;
+  background-color: #fafafa;
+  padding: 15px 0px;
+  color: #373737;
+  font-weight: 500;
+  margin-bottom: 15px;
+  margin-top: -10px;
+}
+
+#friends-display-link i {
+  color: #d5d5d5;
+}
+
+.friends-screen {
+  padding: 0px var(--horizontal-space);
+}
+
+.friends-screen__channel {
+  margin-top: 25px;
+  border-top: var(--main-border);
+  padding-top: 15px;
+}
+
+.friends-screen__channel-header {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--gray-letter);
+}
+
+@keyframes hideSplashScreen {
+  form {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    /* 마우스에 걸리지 않게 빠져버리는 것, 여전히 element는 존재 */
+    visibility: hidden;
+  }
+}
+
+#splash-screen {
+  background-color: var(--yellow);
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 128px;
+  z-index: 999;
+  animation: hideSplashScreen 0.4s ease-in-out forwards;
+  /* forwards를 추가하면 마지막 상태인 opacity 0를 기억함 */
+  /* 하지만 element가 사라지지 않아 다른 버튼 클릭 불가능 */
+  animation-delay: 1s;
+}
+
+#splash-screen i {
+  color: var(--brown);
+}

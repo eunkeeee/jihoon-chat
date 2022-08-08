@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>More - Kokoa Cone</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <!-- To Do: wifi icon -->
+        <i class="fa-solid fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>21:23</span>
+      </div>
+      <div class="status-bar__column">
+        <span>100%</span>
+        <!-- To Do: Battery Icon -->
+        <i class="fa-solid fa-battery-full fa-lg"></i>
+        <!-- To Do: Lightning Icon -->
+      </div>
+    </div>
+
+    <header class="screen-header">
+      <h1 class="screen-header__title">More</h1>
+      <div class="screen-header__icons">
+        <span class="screen-header__icon"
+          ><i class="fa-solid fa-magnifying-glass fa-lg"></i
+        ></span>
+        <span class="screen-header__icon">
+          <span><i class="fa-solid fa-music fa-lg"></i></span>
+        </span>
+        <!-- Homework: Make dots!!! -->
+        <span class="screen-header__icon">
+          <a href="settings.html"><i class="fa-solid fa-gear fa-lg"></i></a>
+          
+          <div class="header__notification--smaller"></div>
+        </span>
+      </div>
+    </header>
+
+    <main class="main-screen more-screen">
+      <div class="user-component">
+        <!-- user 사진과 이름 -->
+        <div class="user-component__column">
+          <img
+            src="https://avatars3.githubusercontent.com/u/3612017"
+            class="user-component__avatar user-component__avatar"
+          />
+          <div class="user-component__text">
+            <h4 class="user-component__title">Nicolas</h4>
+            <div class="user-component__etc ">
+              <h6 class="user-component__subtitle">+1 787-493-4219</h6>
+              <!-- To Do: Make ! -->
+              <span class="user-component__alert badge-border">!</span>
+            </div>
+          </div>
+        </div>
+        <!-- 기타 weird things -->
+        <div class="user-component__column">
+          <!-- message icon -->
+          <i class="fa-solid fa-comment fa-2x"></i>
+        </div>
+      </div>
+
+      <div class="icon-row">
+        <div class="icon-row__icon">
+          <i class="fa-solid fa-calendar"></i><span>Calendar</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="fa-solid fa-face-grin-beam"></i></i><span>Emoticons</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="fa-solid fa-paint-roller"></i></i><span>Themes</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="fa-solid fa-file-invoice"></i></i><span>Account</span>
+        </div>
+      </div>
+
+      <div class="more-suggestions">
+       
+        <h4 class="more-suggestions__title">Suggestions</h4>
+        <div class="more-suggestions__icons">
+
+          <div class="more-suggestions__icon">
+            <div class="more-suggestions__icon-image"><i class="fa-solid fa-quote-right"></i></div>
+            <div class="more-suggestions__icon-text">Kokoa Story</div>
+
+          </div>
+          <div class="more-suggestions__icon">
+            <div class="more-suggestions__icon-image"><i class="fa-solid fa-quote-right"></i></div>
+            <div class="more-suggestions__icon-text">Kokoa Story</div>
+
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <!-- friends icon -->
+        <li class="nav__btn">
+          <a class="nav__link" href="friends.html"
+            ><i class="fa-solid fa-user fa-2x"></i
+          ></a>
+        </li>
+        <!-- chat icon -->
+        <li class="nav__btn">
+          <a class="nav__link" href="chats.html">
+            <i class="fa-solid fa-comment fa-2x"></i
+          ></a>
+        </li>
+        <!-- find icon -->
+        <li class="nav__btn">
+          <a class="nav__link" href="find.html">
+            <i class="fa-solid fa-magnifying-glass fa-2x"> </i
+          ></a>
+        </li>
+
+        <!-- ellipse icon -->
+        <li class="nav__btn">
+          <a class="nav__link" href="more.html">
+            <div class="nav__notification--smaller"></div>
+            <i class="fa-solid fa-ellipsis fa-2x"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div id="no-mobile">
+      <span>Your screen is too big ㅠㅠ</span>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/6376ec8438.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
