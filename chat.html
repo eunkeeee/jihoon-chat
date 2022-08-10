@@ -48,7 +48,7 @@
           <div class="message__info">
             <span class="message__bubble">안녕 훈짱!!!! 나는 깃짱이야</span>
             <span class="message__bubble"
-              >다음말이 듣고싶으면 나한테 사랑한다고 해줘!
+              >다음말이 듣고싶으면 나한테 '사랑해'라고 해줘!
             </span>
             <span class="message__bubble">훈짱 생일축하해!!! ❤</span>
           </div>
@@ -56,7 +56,7 @@
       </div>
 
       <!-- 발신 메세지 -->
-      <div class="message-row message-row--own hidden">
+      <div class="message-row message-row--own">
         <div class="message-row__content">
           <div class="message__info">
             <span class="message__bubble sarang_reply hidden">사랑해!!!❤</span>
@@ -64,13 +64,58 @@
           </div>
         </div>
       </div>
+
+      <!-- 2번째 대답 수신 메세지 -->
+      <div class="message-row git_reply hidden">
+        <img src="img/조은기.jpg" />
+        <div class="message-row__content">
+          <span class="message__author">답정너 깃짱</span>
+          <div class="message__info">
+            <span class="message__bubble">헉</span>
+            <span class="message__bubble hidden git_reply_two">심쿵이군 </span>
+            <span class="message__bubble hidden git_reply_three"
+              >할말이 많으니 잠깐 나가지 말고 기다려봐</span
+            >
+            <span class="message__bubble hidden git_reply_four"
+              >드디어 훈짱의 생일이 왔다니 !!! 훈짱이 멋진 27살이 되어서 너무
+              자랑스러워! 8월에는 나도 훈짱을 위한 채팅을 만들어줄 수 있다니!!!
+              너무 깃뻐 ㅎㅎㅎㅎ 요즘 훈짱이 회사를 다니기 시작하면서 야악간
+              심심하지만 훈짱의 사랑을 항상 잊지 않고 살고있어,,,,ㅎㅎㅎ 훈짱이
+              얼마나 멋진 사람인지 요즘 더 알게되는데 맨날 훈짱이 훈짱이 왜
+              좋아? 라고 말하면 내가 말하는데 일단 너무 잘생김ㅠㅠㅠㅜㅜ 맨날
+              말하는데 진짜 너무너무 잘생김 원래 쿼카였는데 킹카가 되어가는중;;;
+              ㅎㅎㅎㅎ 훈짱은 항상 나랑 같이 놀아줘야해 왜냐면 우리는 할 일이
+              아주 많거든 일단 요즘 너랑 노는게 너무너무 그리워지고 있는디
+              그래도 다행히도 훈짱이 강남에서 일해서 볼 수 있는게 너무너무너무
+              다행이야ㅜㅜ 아무튼!!! 훈짱이랑 미래에 할 일이 너무너무 많음 1.
+              나랑 겨울엔 일단 오션월드나 캐비 겨울버전에 가야함 그때는
+              탈의실에서 좀 외롭지만 우리 두리 가보까? 2. 조만간 로떼월드
+              전망대도 가자 비안오는 맑은날 3. 연탄생고기도 가야되는데,,,
+              바쁘다,,, 4. 나랑 담주부터 뽁싱 다녀야함 그러며는 훈짱을 더
+              자주자주 멋진 모습으로 볼 수 있겠지? 후후 우리 몸짱이 되어보자^..^
+              훈짱이 일찍 일어나느게 혼자 일어나는게 너무 힘든가,,? 싶어서 나랑
+              만날라고 훈짱만 8시에 일어나라하는건 왠지모르게 가혹한거같기도해서
+              훈짱이 8시에 일어나면 나도 같이 8시에 일어나볼까해 (검토단계) 암튼
+              훈짱의 취업으로 인해 변한 우리의 생활을 알차게 보낼 방법을
+              생각중이야 후훙 훈짱과 항상 즐거운 시간을 많이많이 보내고 나서
+              훈짱이랑 할머니 될때까지 지내는게 내 목표인디 어떻게 하면 훈짱과
+              늘 새롭게 재밌게 지낼ㄹ 수 있으까? 일단 그래서 첫 단계가 복싱
+              같이하기인데 ㅋㅋㅋㅋㅋ너무 내맘인가? 아냐 훈짱도 복싱하면
+              좋을거야 나 타자 댑따 빠르지 ㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎ 실시간으로
+              나랑 채팅중인데 대박쿠 ㅎㅎ히히히 훈짱 항상 너무 고맙구 나랑 잘
+              지내줘서 너무너무 고마워 여기까지 답정너 깃짱이었습니다. 훈짱은
+              항상 최고야 오늘 밥도 맛잇게 먹쟈 !!!!!!</span
+            >
+          </div>
+        </div>
+      </div>
     </main>
 
-    <form class="reply">
+    <form class="reply sarang_form">
       <div class="reply__column">
         <i class="fa-solid fa-square-plus fa-lg"></i>
       </div>
-      <form class="reply__column">
+      <div class="reply__column">
         <input
           class="sarang_respond_input"
           type="text"
@@ -78,7 +123,7 @@
         />
         <i class="fa-solid fa-face-grin fa-lg"></i>
         <button><i class="fa-solid fa-arrow-up fa-lg"></i></button>
-      </form>
+      </div>
     </form>
 
     <div id="no-mobile">
