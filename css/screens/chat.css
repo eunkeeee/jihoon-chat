@@ -77,6 +77,10 @@
   gap: 7px;
 }
 
+.message__info--own {
+  align-items: flex-end;
+}
+
 .message__bubble {
   background-color: white;
   padding: 13px;
