@@ -78,7 +78,7 @@
 }
 
 .message__info--own {
-  align-items: flex-end;
+  align-items: flex-en;
 }
 
 .message__bubble {
@@ -124,7 +124,7 @@
   box-sizing: border-box;
   align-items: center;
 
-  /* transition: all 0.3s ease-in-out; */
+  transition: all 0.3s ease-in-out;
 }
 
 .reply__column {
@@ -193,12 +193,12 @@
   opacity: 0;
 }
 
-.reply input:focus {
+/* .reply input:focus {
   width: 93vw;
   transform: translateX(-13%) translateY(-80px);
-}
-B
+} */
+
 /* 개멋진 것 */
-.reply:focus-within {
+/* .reply:focus-within {
   transform: translateY(80px);
-}
+} */
