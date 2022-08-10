@@ -1,4 +1,5 @@
 const sarangHae = document.querySelector(".sarang_reply");
+const sarangBubble = document.querySelector(".sarang_bubble");
 const sarangInput = document.querySelector(".sarang_respond_input");
 const sarangForm = document.querySelector(".sarang_form");
 const gitReply = document.querySelector(".git_reply");
@@ -10,17 +11,17 @@ const HIDDEN_CLASSNAME = "hidden";
 
 // sarangInput.value = "사랑해";
 const onSubmit = (event) => {
+  const hoonjjangReply = sarangInput.value;
   event.preventDefault();
-  console.log(sarangInput.value);
-  if (sarangInput.value.includes("사랑")) {
+  if (hoonjjangReply.includes("사랑")) {
     sarangHae.classList.remove(HIDDEN_CLASSNAME);
-
+    sarangBubble.innerText = hoonjjangReply;
     sarangInput.value = "";
     setTimeout(() => {
       one.classList.add(HIDDEN_CLASSNAME);
       gitReply.classList.remove(HIDDEN_CLASSNAME);
-    }, 3000);
-    setTimeout(() => gitReplyTwo.classList.remove(HIDDEN_CLASSNAME), 4000);
+    }, 2000);
+    setTimeout(() => gitReplyTwo.classList.remove(HIDDEN_CLASSNAME), 3000);
     setTimeout(() => gitReplyThree.classList.remove(HIDDEN_CLASSNAME), 6000);
     setTimeout(() => gitReplyFour.classList.remove(HIDDEN_CLASSNAME), 10000);
   }
