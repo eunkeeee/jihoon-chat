@@ -36,6 +36,7 @@
 .user-component__title {
   font-weight: 600;
   font-size: 22px;
+  margin-bottom: 10px;
 }
 
 .user-component__title--not-bold {

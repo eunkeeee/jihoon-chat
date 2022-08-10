@@ -15,7 +15,7 @@
         <i class="fa-solid fa-wifi"></i>
       </div>
       <div class="status-bar__column">
-        <span>21:23</span>
+        <span class="clock"></span>
       </div>
       <div class="status-bar__column">
         <span>100%</span>
@@ -141,14 +141,26 @@
     </nav>
 
     <!-- 새로운 animation 생성 -->
-    <div id="splash-screen">
+    <!-- <div id="splash-screen">
       <i class="fa-solid fa-comment"></i>
-    </div>
+    </div> -->
 
     <div id="no-mobile">
       <span>Your screen is too big (last change)</span>
     </div>
 
+    <script>
+      const clock = document.querySelector(".clock");
+      function getClock() {
+        const date = new Date();
+        const hours = String(date.getHours()).padStart(2, "0");
+        const minutes = String(date.getMinutes()).padStart(2, "0");
+        clock.innerText = `${hours}:${minutes}`;
+      }
+
+      getClock();
+      setInterval(getClock, 1000);
+    </script>
     <script
       src="https://kit.fontawesome.com/6376ec8438.js"
       crossorigin="anonymous"

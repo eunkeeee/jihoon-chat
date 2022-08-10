@@ -15,7 +15,7 @@
         <i class="fa-solid fa-wifi"></i>
       </div>
       <div class="status-bar__column">
-        <span>21:23</span>
+        <span class="clock"></span>
       </div>
       <div class="status-bar__column">
         <span>100%</span>
@@ -136,7 +136,19 @@
     <div id="no-mobile">
       <span>Your screen is too big ㅠㅠ</span>
     </div>
-
+    <script>
+      const clock = document.querySelector(".clock");
+      const messageTime = document.querySelector(".message_time");
+      function getClock() {
+        const date = new Date();
+        const hours = String(date.getHours()).padStart(2, "0");
+        const minutes = String(date.getMinutes()).padStart(2, "0");
+        clock.innerText = `${hours}:${minutes}`;
+        messageTime.innerText = `${hours}:${minutes}`;
+      }
+      getClock();
+      setInterval(getClock, 1000);
+    </script>
     <script
       src="https://kit.fontawesome.com/6376ec8438.js"
       crossorigin="anonymous"

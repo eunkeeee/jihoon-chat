@@ -15,7 +15,7 @@
         <i class="fa-solid fa-wifi"></i>
       </div>
       <div class="status-bar__column">
-        <span>21:28</span>
+        <span class="clock"></span>
       </div>
       <div class="status-bar__column">
         <span>100%</span>
@@ -30,7 +30,7 @@
         <a href="chats.html"><i class="fa-solid fa-chevron-left fa-2x"></i></a>
       </div>
       <div class="alt-header__column">
-        <h1 class="alt-header__title">니꼬</h1>
+        <h1 class="alt-header__title">깃짱</h1>
       </div>
       <div class="alt-header__column">
         <span><i class="fa-solid fa-magnifying-glass fa-xl"></i></span>
@@ -39,25 +39,28 @@
     </header>
 
     <main class="main-screen main-chat">
-      <div class="chat__timestamp">Tuesday, June 30, 2020</div>
+      <div class="chat__timestamp"></div>
       <!-- 수신 메세지 -->
       <div class="message-row">
-        <img src="https://avatars3.githubusercontent.com/u/3612017" />
+        <img src="img/조은기.jpg" />
         <div class="message-row__content">
-          <span class="message__author">Nicolas</span>
+          <span class="message__author">깃짱</span>
           <div class="message__info">
-            <span class="message__bubble">Hi!</span>
-            <span class="message_time">21:27</span>
+            <span class="message__bubble">안녕 훈짱!!!! 나는 깃짱이야</span>
+            <span class="message__bubble"
+              >다음말이 듣고싶으면 나한테 사랑한다고 해줘!
+            </span>
+            <span class="message__bubble">훈짱 생일축하해!!! ❤</span>
           </div>
         </div>
       </div>
 
       <!-- 발신 메세지 -->
-      <div class="message-row message-row--own">
+      <div class="message-row message-row--own hidden">
         <div class="message-row__content">
           <div class="message__info">
-            <span class="message__bubble">What's up?</span>
-            <span class="message_time">21:27</span>
+            <span class="message__bubble sarang_reply hidden">사랑해!!!❤</span>
+            <span class="clock"></span>
           </div>
         </div>
       </div>
@@ -67,16 +70,49 @@
       <div class="reply__column">
         <i class="fa-solid fa-square-plus fa-lg"></i>
       </div>
-      <div class="reply__column">
-        <input type="text" placeholder="Write a message..." />
+      <form class="reply__column">
+        <input
+          class="sarang_respond_input"
+          type="text"
+          placeholder="Write a message..."
+        />
         <i class="fa-solid fa-face-grin fa-lg"></i>
         <button><i class="fa-solid fa-arrow-up fa-lg"></i></button>
-      </div>
+      </form>
     </form>
 
     <div id="no-mobile">
       <span>Your screen is too big ㅠㅠ</span>
     </div>
+
+    <script src="chat.js"></script>
+
+    <script>
+      const clock = document.querySelector(".clock");
+      function getClock() {
+        const date = new Date();
+        const hours = String(date.getHours()).padStart(2, "0");
+        const minutes = String(date.getMinutes()).padStart(2, "0");
+        clock.innerText = `${hours}:${minutes}`;
+      }
+      getClock();
+      setInterval(getClock, 1000);
+    </script>
+    <script>
+      const timeStamp = document.querySelector(".chat__timestamp");
+      // const WEEKDAY = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
+      // const today = new Date();
+      // const yoil = WEEKDAY[today.getDay()];
+      // // const day = today.getDate();
+      // // const month = today.getMonth();
+      // const enDateString = today.toLocaleString("en-US");
+      // const monthNameLong = today.toLocaleString("en-US", { month: "long" });
+      // console.log(enDateString);
+      // console.log(monthNameLong);
+      // console.log(monthNameShort);
+
+      timeStamp.innerText = "2022년 8월 10일 수요일";
+    </script>
 
     <script
       src="https://kit.fontawesome.com/6376ec8438.js"
