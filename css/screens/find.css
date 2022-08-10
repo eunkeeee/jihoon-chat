@@ -40,12 +40,13 @@
 
 .open-post__title {
   font-weight: 600;
-  margin-bottom: 7px;
+  margin-bottom: 9px;
 }
 .open-post__hashtags {
+  font-size: 15px;
   text-transform: uppercase;
   color: var(--gray-letter);
-  margin-bottom: 7px;
+  margin-bottom: 9px;
 }
 .open-post__members {
   display: flex;
