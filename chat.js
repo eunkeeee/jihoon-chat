@@ -11,7 +11,7 @@ const HIDDEN_CLASSNAME = "hidden";
 const onSubmit = (event) => {
   event.preventDefault();
   console.log(sarangInput.value);
-  if (sarangInput.value === "사랑해") {
+  if (sarangInput.value.includes("사랑")) {
     sarangHae.classList.remove("hidden");
     sarangInput.value = "";
     setTimeout(() => gitReply.classList.remove("hidden"), 3000);
@@ -21,4 +21,3 @@ const onSubmit = (event) => {
   }
 };
 sarangForm.addEventListener("submit", onSubmit);
-// sarangHae.classList.remove("hidden");
