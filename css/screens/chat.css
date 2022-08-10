@@ -78,7 +78,7 @@
 }
 
 .message__info--own {
-  align-items: flex-en;
+  align-items: flex-end;
 }
 
 .message__bubble {
@@ -170,18 +170,17 @@
   border-radius: 15px;
 }
 
-.d button:focus,
+/* .d button:focus,
 .d button:active {
   outline: none;
-}
+} */
 
 /* reply 내부에 어떤 element가 focus되어 있다면 */
 /* .reply:focus-within .reply__column:first-child {
   /* display: none; */
-  opacity: 0;
+/* opacity: 0;
   display: hidden;
 } */
-
 /* .reply .reply__column:first-child,
 .reply .fa-face-grin,
 .reply button {
